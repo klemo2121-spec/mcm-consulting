@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MCM Consulting | Agricultural & Regulatory Consulting</title>
 
-  <meta name="description" content="MCM Consulting provides professional agricultural, regulatory and cultivation consulting services for licensed and controlled operations.">
+  <meta name="description" content="Professional consulting services in agricultural operations, regulatory compliance and cultivation management for licensed environments.">
 
   <style>
     :root{
@@ -17,9 +17,9 @@
       --muted:#586b60;
       --card:#ffffff;
       --border:#dfeee4;
-      --shadow:0 14px 40px rgba(0,0,0,.10);
+      --shadow:0 12px 30px rgba(0,0,0,.08);
       --radius:18px;
-      --max:1040px;
+      --max:1000px;
     }
 
     *{ box-sizing:border-box; }
@@ -30,6 +30,7 @@
       background:var(--bg);
       color:var(--ink);
       line-height:1.65;
+      text-align:center;
     }
 
     .wrap{
@@ -39,15 +40,14 @@
     }
 
     header{
-      padding:60px 0 40px;
+      padding:60px 0 50px;
       background:linear-gradient(135deg,#ffffff 0%,var(--mint) 60%);
       border-bottom:1px solid var(--border);
-      text-align:center;
     }
 
     .logo{
       width:150px;
-      margin:0 auto 16px;
+      margin:0 auto 18px;
       display:block;
       border-radius:18px;
       box-shadow:var(--shadow);
@@ -60,40 +60,41 @@
     }
 
     .subtitle{
-      margin:12px auto 0;
+      margin:14px auto 0;
       max-width:760px;
       color:var(--muted);
       font-size:18px;
     }
 
     section{
-      padding:50px 0;
+      padding:55px 0;
     }
 
     h2{
-      color:var(--green);
       font-size:28px;
-      margin-bottom:24px;
+      color:var(--green);
+      margin-bottom:28px;
     }
 
     .grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:18px;
+      gap:20px;
     }
 
     .card{
       background:var(--card);
       border:1px solid var(--border);
       border-radius:var(--radius);
-      padding:24px;
-      box-shadow:0 10px 26px rgba(0,0,0,.08);
+      padding:26px;
+      box-shadow:var(--shadow);
     }
 
     .card b{
       display:block;
-      margin-bottom:8px;
+      margin-bottom:10px;
       font-size:16px;
+      color:var(--ink);
     }
 
     .card p{
@@ -102,29 +103,27 @@
       font-size:15.5px;
     }
 
+    .about{
+      background:#ffffff;
+      border-top:1px solid var(--border);
+      border-bottom:1px solid var(--border);
+    }
+
     footer{
+      padding:45px 0;
       background:#eaf5ee;
       border-top:1px solid var(--border);
-      padding:40px 0;
     }
 
-    .footerGrid{
+    .contact{
       display:grid;
       grid-template-columns:1fr 1fr;
-      gap:18px;
+      gap:20px;
+      margin-top:20px;
     }
 
-    .miniCard{
-      background:#fff;
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:18px;
-    }
-
-    .label{
-      font-weight:800;
-      color:var(--greenDark);
-      margin-bottom:6px;
+    .contact .card{
+      padding:20px;
     }
 
     a{
@@ -135,7 +134,7 @@
 
     @media(max-width:800px){
       h1{ font-size:32px; }
-      .footerGrid{ grid-template-columns:1fr; }
+      .contact{ grid-template-columns:1fr; }
     }
   </style>
 </head>
@@ -147,6 +146,7 @@
     <img src="IMG_2179.jpeg" alt="MCM Consulting Logo" class="logo">
 
     <h1>MCM Consulting</h1>
+
     <p class="subtitle">
       Professional consulting services in agricultural operations,
       regulatory compliance and cultivation management
@@ -173,7 +173,8 @@
         <b>Cultivation & Operations Consulting</b>
         <p>
           Planning and optimization of controlled cultivation environments,
-          workflow design, environmental management and production efficiency.
+          workflow design, environmental management
+          and production efficiency.
         </p>
       </div>
 
@@ -181,14 +182,14 @@
         <b>Nutrient & Fertilization Programs</b>
         <p>
           Custom nutrient strategies, EC / pH management,
-          substrate optimization and troubleshooting.
+          substrate optimization and technical troubleshooting.
         </p>
       </div>
 
       <div class="card">
         <b>Operational Management Support</b>
         <p>
-          Daily operations support, staff workflow optimization,
+          Daily operations support, staff workflow alignment,
           production planning and quality control processes.
         </p>
       </div>
@@ -196,15 +197,16 @@
   </div>
 </section>
 
-<section style="background:#ffffff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+<section class="about">
   <div class="wrap">
     <h2>About</h2>
+
     <div class="card">
       <p>
         MCM Consulting provides practical, experience-based consulting
         for agricultural and regulated operations.
-        Our focus is on operational stability, compliance alignment
-        and long-term sustainability.
+        Our focus is long-term stability, compliance alignment
+        and efficient operational performance.
       </p>
     </div>
   </div>
@@ -212,14 +214,16 @@
 
 <footer>
   <div class="wrap">
-    <div class="footerGrid">
-      <div class="miniCard">
-        <div class="label">Phone</div>
+    <h2>Contact</h2>
+
+    <div class="contact">
+      <div class="card">
+        <b>Phone</b>
         <p><a href="tel:+66625719000">+66 62 571 9000</a></p>
       </div>
 
-      <div class="miniCard">
-        <div class="label">Address</div>
+      <div class="card">
+        <b>Address</b>
         <p>
           119 Moo 3<br>
           Thung Ruang Thong Subdistrict<br>
