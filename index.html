@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MCM Cannabis Consulting | Medical Cannabis</title>
-  <meta name="description" content="MCM Cannabis Consulting – consulting services for the medical cannabis industry: regulation, cultivation, nutrients and farm operations.">
-  <meta name="robots" content="index,follow" />
+  <title>MCM Consulting | Agricultural & Regulatory Consulting</title>
+
+  <meta name="description" content="MCM Consulting provides professional agricultural, regulatory and cultivation consulting services for licensed and controlled operations.">
 
   <style>
     :root{
@@ -18,163 +18,82 @@
       --card:#ffffff;
       --border:#dfeee4;
       --shadow:0 14px 40px rgba(0,0,0,.10);
-      --shadow2:0 10px 28px rgba(0,0,0,.08);
       --radius:18px;
       --max:1040px;
     }
 
     *{ box-sizing:border-box; }
-    html, body{ height:100%; }
 
     body{
       margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
       color:var(--ink);
-      background: radial-gradient(900px 520px at 20% 0%, rgba(31,122,63,.10), transparent 60%),
-                  radial-gradient(900px 520px at 80% 0%, rgba(31,122,63,.08), transparent 60%),
-                  var(--bg);
       line-height:1.65;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
     }
-
-    a{ color:var(--greenDark); text-decoration:none; font-weight:600; }
-    a:hover{ text-decoration:underline; }
 
     .wrap{
       max-width:var(--max);
-      margin:0 auto;
+      margin:auto;
       padding:0 20px;
     }
 
-    /* Header */
     header{
-      padding:54px 0 34px;
-      background: linear-gradient(135deg, #ffffff 0%, var(--mint) 55%, #ffffff 100%);
+      padding:60px 0 40px;
+      background:linear-gradient(135deg,#ffffff 0%,var(--mint) 60%);
       border-bottom:1px solid var(--border);
-    }
-
-    .hero{
       text-align:center;
-      padding: 0 0 10px;
     }
 
     .logo{
-      width:160px;
-      height:auto;
+      width:150px;
+      margin:0 auto 16px;
       display:block;
-      margin: 0 auto 14px;
-      filter: drop-shadow(0 10px 18px rgba(0,0,0,.12));
-      border-radius: 18px;
+      border-radius:18px;
+      box-shadow:var(--shadow);
     }
 
     h1{
       margin:0;
-      font-size:42px;
-      letter-spacing:.2px;
+      font-size:40px;
       color:var(--green);
     }
 
     .subtitle{
-      margin:10px auto 0;
-      max-width:820px;
+      margin:12px auto 0;
+      max-width:760px;
       color:var(--muted);
       font-size:18px;
     }
 
-    .badges{
-      display:flex;
-      justify-content:center;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-top:18px;
-    }
-
-    .badge{
-      display:inline-block;
-      padding:7px 12px;
-      border-radius:999px;
-      background:#ffffff;
-      border:1px solid var(--border);
-      color:#1c2b21;
-      font-weight:700;
-      font-size:12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,.06);
-    }
-
-    .cta{
-      margin-top:22px;
-      display:flex;
-      justify-content:center;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:800;
-      border:1px solid var(--border);
-    }
-    .btn.primary{
-      background:var(--green);
-      color:#fff;
-      border-color: transparent;
-      box-shadow: 0 12px 26px rgba(31,122,63,.22);
-    }
-    .btn.primary:hover{ text-decoration:none; background:var(--greenDark); }
-    .btn.ghost{
-      background:#fff;
-      color:var(--greenDark);
-    }
-    .btn.ghost:hover{ text-decoration:none; background:#f7fbf8; }
-
-    /* Sections */
-    section{ padding:46px 0; }
-
-    .sectionTitle{
-      display:flex;
-      align-items:flex-end;
-      justify-content:space-between;
-      gap:16px;
-      flex-wrap:wrap;
-      margin-bottom:16px;
+    section{
+      padding:50px 0;
     }
 
     h2{
-      margin:0;
-      font-size:28px;
       color:var(--green);
-      letter-spacing:.2px;
-    }
-
-    .sectionNote{
-      color:var(--muted);
-      font-size:14px;
-      margin:0;
-      max-width:520px;
+      font-size:28px;
+      margin-bottom:24px;
     }
 
     .grid{
       display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
     }
 
     .card{
       background:var(--card);
       border:1px solid var(--border);
       border-radius:var(--radius);
-      padding:22px;
-      box-shadow: var(--shadow2);
+      padding:24px;
+      box-shadow:0 10px 26px rgba(0,0,0,.08);
     }
 
     .card b{
       display:block;
-      font-size:16px;
-      color:#102116;
       margin-bottom:8px;
+      font-size:16px;
     }
 
     .card p{
@@ -183,74 +102,40 @@
       font-size:15.5px;
     }
 
-    .about{
-      background:#ffffff;
-      border-top:1px solid var(--border);
-      border-bottom:1px solid var(--border);
-    }
-
-    .aboutCard{
-      background: linear-gradient(180deg, #ffffff 0%, #fbfffc 100%);
-      border:1px solid var(--border);
-      border-radius:var(--radius);
-      padding:24px;
-      box-shadow: var(--shadow2);
-    }
-
-    .aboutCard p{
-      margin:0;
-      color:var(--muted);
-      font-size:16px;
-    }
-
-    /* Footer */
     footer{
-      padding:36px 0 44px;
-      background: linear-gradient(180deg, #eaf5ee 0%, #e6f3ea 100%);
+      background:#eaf5ee;
       border-top:1px solid var(--border);
+      padding:40px 0;
     }
 
     .footerGrid{
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:16px;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
     }
 
     .miniCard{
-      background:#ffffff;
+      background:#fff;
       border:1px solid var(--border);
       border-radius:var(--radius);
       padding:18px;
-      box-shadow: var(--shadow2);
     }
 
-    .miniCard .label{
-      font-weight:900;
+    .label{
+      font-weight:800;
       color:var(--greenDark);
-      margin-bottom:8px;
-      font-size:13px;
-      letter-spacing:.2px;
+      margin-bottom:6px;
     }
 
-    .miniCard p{
-      margin:0;
-      color:#223226;
-      font-size:15.5px;
+    a{
+      color:var(--greenDark);
+      font-weight:700;
+      text-decoration:none;
     }
 
-    .mutedSmall{
-      margin-top:14px;
-      color:var(--muted);
-      font-size:12.5px;
-      text-align:center;
-    }
-
-    /* Responsive */
-    @media (max-width: 860px){
-      .grid{ grid-template-columns: 1fr; }
-      .footerGrid{ grid-template-columns: 1fr; }
-      h1{ font-size:34px; }
-      .logo{ width:140px; }
+    @media(max-width:800px){
+      h1{ font-size:32px; }
+      .footerGrid{ grid-template-columns:1fr; }
     }
   </style>
 </head>
@@ -258,92 +143,74 @@
 <body>
 
 <header>
-  <div class="wrap hero">
-    <img src="IMG_2179.jpeg" alt="MCM Cannabis Consulting Logo" class="logo">
+  <div class="wrap">
+    <img src="IMG_2179.jpeg" alt="MCM Consulting Logo" class="logo">
 
-    <h1>MCM Cannabis Consulting</h1>
+    <h1>MCM Consulting</h1>
     <p class="subtitle">
-      Professional consulting services for the <b>medical cannabis</b> industry —
-      regulation & compliance, cultivation strategy, nutrient programs, and farm operations.
+      Professional consulting services in agricultural operations,
+      regulatory compliance and cultivation management
+      for licensed and controlled environments.
     </p>
-
-    <div class="badges">
-      <span class="badge">Medical Cannabis Focus</span>
-      <span class="badge">Compliance & SOPs</span>
-      <span class="badge">Cultivation & Nutrients</span>
-      <span class="badge">Operations & QA/QC</span>
-    </div>
-
-    <div class="cta">
-      <a class="btn primary" href="tel:+66625719000">Call: +66 62 571 9000</a>
-      <a class="btn ghost" href="#services">View services</a>
-    </div>
   </div>
 </header>
 
-<main>
-  <section id="services">
-    <div class="wrap">
-      <div class="sectionTitle">
-        <h2>Consulting Services</h2>
-        <p class="sectionNote">Practical, experience-based support for licensed medical cannabis operations.</p>
-      </div>
+<section>
+  <div class="wrap">
+    <h2>Consulting Services</h2>
 
-      <div class="grid">
-        <div class="card">
-          <b>Regulation & Compliance (Medical Cannabis)</b>
-          <p>
-            Licensing support, regulatory guidance, SOP development,
-            GACP / GAP readiness, documentation, and compliance systems.
-          </p>
-        </div>
-
-        <div class="card">
-          <b>Cultivation Consulting</b>
-          <p>
-            Indoor and greenhouse strategies, crop cycle planning,
-            environmental management, and consistent medical-grade quality.
-          </p>
-        </div>
-
-        <div class="card">
-          <b>Nutrients & Fertilization Programs</b>
-          <p>
-            Custom nutrient programs, EC / pH management,
-            substrate optimization, and advanced troubleshooting.
-          </p>
-        </div>
-
-        <div class="card">
-          <b>Farm Operations & Management</b>
-          <p>
-            Workflow design, staff training support, production planning,
-            harvest & drying processes, QA/QC and cost optimization.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="wrap">
-      <div class="sectionTitle">
-        <h2>About</h2>
-        <p class="sectionNote">Focused consulting for the medical cannabis sector.</p>
-      </div>
-
-      <div class="aboutCard">
+    <div class="grid">
+      <div class="card">
+        <b>Regulatory & Compliance Consulting</b>
         <p>
-          MCM Cannabis Consulting focuses exclusively on the medical cannabis sector.
-          We support licensed farms and operators with hands-on consulting designed to improve
-          compliance readiness, operational stability, and consistent product quality.
+          Guidance on licensing processes, documentation,
+          SOP development and compliance readiness
+          for regulated agricultural operations.
+        </p>
+      </div>
+
+      <div class="card">
+        <b>Cultivation & Operations Consulting</b>
+        <p>
+          Planning and optimization of controlled cultivation environments,
+          workflow design, environmental management and production efficiency.
+        </p>
+      </div>
+
+      <div class="card">
+        <b>Nutrient & Fertilization Programs</b>
+        <p>
+          Custom nutrient strategies, EC / pH management,
+          substrate optimization and troubleshooting.
+        </p>
+      </div>
+
+      <div class="card">
+        <b>Operational Management Support</b>
+        <p>
+          Daily operations support, staff workflow optimization,
+          production planning and quality control processes.
         </p>
       </div>
     </div>
-  </section>
-</main>
+  </div>
+</section>
 
-<footer id="contact">
+<section style="background:#ffffff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="wrap">
+    <h2>About</h2>
+    <div class="card">
+      <p>
+        MCM Consulting provides practical, experience-based consulting
+        for agricultural and regulated operations.
+        Our focus is on operational stability, compliance alignment
+        and long-term sustainability.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
   <div class="wrap">
     <div class="footerGrid">
       <div class="miniCard">
@@ -361,16 +228,8 @@
         </p>
       </div>
     </div>
-
-    <div class="mutedSmall">
-      © <span id="y"></span> MCM Cannabis Consulting. All rights reserved.
-    </div>
   </div>
 </footer>
-
-<script>
-  document.getElementById("y").textContent = new Date().getFullYear();
-</script>
 
 </body>
 </html>
